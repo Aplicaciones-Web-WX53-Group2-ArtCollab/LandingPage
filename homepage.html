@@ -12,27 +12,43 @@
 <body>
         <div x-data="Data()" x-init="Start()">
             <nav class="py-6 ">
-                <div class="flex justify-between flex-wrap">
-                 <div class="flex gap-3 mx-3">
+                <div class="flex justify-between">
+                 <div class="flex flex-row gap-3 mx-3">
                      <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
-                     <a href="/homepage.html" class="text-white font-bold"> ART COLLAB</a>
+                     <a href="/Homepage.html" class="text-white font-bold"> ART COLLAB</a>
                  </div>
-                  <div class="flex gap-5 flex-col justify-center items-center md:flex-row">
-                     <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
-                    <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 845 ? true : false">
-                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
-                         <li class="mr-6">
+                  <div class="flex gap-4 flex-col justify-center items-center lg:flex-row">
+                     <span class="material-symbols-outlined  text-white mx-5 scale-125 hover:text-orange-400  lg:hidden" @click="SetToggle()"> menu </span>
+                    <div class=" lg:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 1024 ? true : false">
+                     <ul class="flex flex-wrap flex-col gap-6 text-center lg:flex-row ">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Artistas</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Libros</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Colabora</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Premium</a>
                          </li>
+                         <div class="flex flex-col lg:flex-row gap-3">
+                            <li>
+                                <div class="border-slate-100 border-solid border-2 w-44 h-9  flex rounded-md">
+                                  <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
+                                   <span class="material-symbols-outlined pt-1 text-white text-xl mx-2">search </span>
+                                </div>
+                                
+                             </li>
+                             <li>
+                                <input class=" bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
+                             </li>
+                             <li>
+                             <li >
+                                <input class="bg-white text-sm w-24 h-9 mx-3  rounded-md" type="button" value="Registrate"/> 
+                             </li>
+                         </div>
                      </ul>
                     </div>
                   </div>
@@ -40,21 +56,18 @@
                 </div>
              </nav>
         </div>
-
-        <section class="text-white py-20">
-            <div class="container mx-auto">
-                <div class="hero-content flex items-center">
-                    <div class="w-1/2">
-                          <h1 class="text-9xl font-bold mt-0">INSPIRA, CREA, COLABORA</h1>
-                          <button class="mt-4 px-6 py-3 ml-[30px] bg-sky-200 text-black font-bold rounded-md">Únete a nuestra comunidad</button>
-                    </div>
-                    <div class="w-1/2">
-                        <img src="src/assets/Hero-image.png" class="w-full">
-                    </div>
-                </div>
+        <div  class="flex justify-between relative h-full">
+            <div class="pt-10 mx-10 flex flex-col gap-5"> 
+                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
+                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
+                <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
+                <button class=" text-xs md:text-sm bg-blue-400 w-48 text-black absolute top-44 sm:top-48 md:top-52 lg:top-72 h-12 sm:w-46 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
             </div>
-        </section>
-
+            <div class="absolute right-2 top-0 ">
+                <img src="./src/assets/Hero-image.png" alt="hero" class=" w-64 sm:w-96 md:w-full"/>
+            </div>
+        </div>
+      
    <script src="./src/js/index.js"></script>
     
 </body>
