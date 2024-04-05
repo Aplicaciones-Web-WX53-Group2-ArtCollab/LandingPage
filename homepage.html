@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Art Collab</title>
+</head>
+<body>
+        <div x-data="Data()" x-init="Start()">
+            <nav class="py-6 ">
+                <div class="flex justify-between flex-wrap">
+                 <div class="flex gap-3 mx-3">
+                     <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
+                     <a href="/homepage.html" class="text-white font-bold"> ART COLLAB</a>
+                 </div>
+                  <div class="flex gap-5 flex-col justify-center items-center md:flex-row">
+                     <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
+                    <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 845 ? true : false">
+                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
+                         <li class="mr-6">
+                             <a href="#" class="text-white hover:text-orange-400">Artistas</a>
+                         </li>
+                         <li class="mr-6">
+                             <a href="#" class="text-white hover:text-orange-400">Libros</a>
+                         </li>
+                         <li class="mr-6">
+                             <a href="#" class="text-white hover:text-orange-400">Colabora</a>
+                         </li>
+                         <li class="mr-6">
+                             <a href="#" class="text-white hover:text-orange-400">Premium</a>
+                         </li>
+                     </ul>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+             </nav>
+        </div>
+
+        <section class="text-white py-20">
+            <div class="container mx-auto">
+                <div class="hero-content flex items-center">
+                    <div class="w-1/2">
+                          <h1 class="text-9xl font-bold mt-0">INSPIRA, CREA, COLABORA</h1>
+                          <button class="mt-4 px-6 py-3 ml-[30px] bg-sky-200 text-black font-bold rounded-md">Únete a nuestra comunidad</button>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="src/assets/Hero-image.png" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   <script src="./src/js/index.js"></script>
+    
+</body>
+</html>
