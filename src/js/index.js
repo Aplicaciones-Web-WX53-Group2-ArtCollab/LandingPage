@@ -4,7 +4,9 @@ function Data(){
 
       Start() {
           if (window.innerWidth <= 768) { // Si la pantalla es menor o igual a 768px
-      toggle: window.innerWidth > 845, // Inicializar toggle basado en el ancho de la ventana
+              toggle: window.innerWidth > 845; // Inicializar toggle basado en el ancho de la ventana
+          }
+        },
 
       Start() {
           if (window.innerWidth <= 845) { // Si la pantalla es menor o igual a 768px
@@ -18,8 +20,6 @@ function Data(){
           return this.toggle;
       }
   }
- }
-}
 }
 
 var swiper = new Swiper(".mySwiper", {

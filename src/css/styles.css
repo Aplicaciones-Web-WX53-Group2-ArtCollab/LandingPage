@@ -2,10 +2,7 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
-=======
   overflow-y: hidden;
->>>>>>> c305952 (feat: merge branch with explore feature)
 }
 
 :root{
@@ -13,12 +10,8 @@
 }
 
 html,body{
-    background-image: url("../assets/Hero-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: auto;
     height: auto;
-
 }
 
 span:hover{
@@ -48,22 +41,16 @@ button{
   }
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> c305952 (feat: merge branch with explore feature)
 .books{
   padding: 50px 0 150px 0;;
 }
 .swiper{
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
-=======
   width: 100%;
->>>>>>> c305952 (feat: merge branch with explore feature)
 }
 .swiper-slide{
  background-position: center;
@@ -74,13 +61,10 @@ button{
   display: block;
   width: 100%;
 }
-<<<<<<< HEAD
 
 .hero-container {
   height: 52vh;
 }
-=======
->>>>>>> c305952 (feat: merge branch with explore feature)
 @media(max-width: 991px){
   body{
       min-height: 0vh;
@@ -88,7 +72,6 @@ button{
   .books{
       padding: 30px;
   }
-<<<<<<< HEAD
 
 }
 
@@ -96,7 +79,5 @@ button{
   .hero-container {
     height:29vh;
   }
-=======
   
->>>>>>> c305952 (feat: merge branch with explore feature)
 }
