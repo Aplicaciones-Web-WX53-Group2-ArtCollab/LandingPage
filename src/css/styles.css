@@ -4,3 +4,11 @@
   box-sizing: border-box;
   overflow-y: hidden;
 }
+
+li{
+  cursor: pointer;
+}
+
+.terms-conditions{
+  cursor: pointer;
+}
