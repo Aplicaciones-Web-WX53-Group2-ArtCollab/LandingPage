@@ -10,12 +10,8 @@
 }
 
 html,body{
-    background-image: url("../assets/Hero-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: auto;
     height: auto;
-
 }
 
 span:hover{
