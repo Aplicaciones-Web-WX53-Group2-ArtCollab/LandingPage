@@ -1,48 +1,72 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Art Collab</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubre</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-<footer class=" flex flex-col gap-7 bg-cyan-950 py-6 ">
-    <ul class="flex flex-col md:flex-row gap-7 mx-10">
-        <li class=" text-xs text-slate-200 "> ARTISTAS</li>
-        <li class=" text-xs text-slate-200 "> LIBRO</li>
-        <li class=" text-xs text-slate-200 "> COLABORA </li>
-        <li class=" text-xs text-slate-200 "> NOSOTROS </li>
-    </ul>
-    <div class="mx-10 ">
-        <hr>
-    </div>
-    <div class="flex justify-center items-center md:justify-between flex-col gap-6 md:gap-3 md:flex-row mx-10">
-        <div class="flex flex-col items-center gap-3">
-            <img src="./src/assets/logo.png" alt="logo" class="w-24 rounded-full ">
-            <p class="text-xs text-slate-200 font-bold text-center">ART COLLAB</p>
-        </div>
-        <div class="w-1/2">
-            <p class="text-slate-200 leading-4 "> Un proyecto hecho por artistas, para artistas. Colabora y crea nuevos proyectos
-                y transforma tu hobby en un trabajo o revisa nuestro amplio catálogo de libros y de artistas.</p>
-        </div>
-        <div class="terms-conditions flex gap-5">
-            <p class="text-slate-200 leading-4"> Políticas de Privacidad </p>
-            <p class="text-slate-200 leading-4"> Términos de uso</p>
-        </div>
+  <div
+    style="background-image: url('src/assets/Descubre.png'); width: auto; height: auto; background-repeat: no-repeat; background-size:cover;">
+    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Explora Y</h1>
+    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Descubre</h1>
+    <br>
+    <h4 class="font-bold text-2xl text-right md:text-4xl">nuestro cátalogo de libros y artistas</h4>
+    <br>
+    <section class="Books-Container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-        <div class="socials flex gap-10">
-            <i class="fa fa-instagram text-white text-2xl md:pr-5" aria-hidden="true"></i>
-            <i class="fa fa-facebook text-white text-2xl md:pr-4" aria-hidden="true"></i>
-            <i class="fa fa-twitter text-white text-2xl md:pr-5" aria-hidden="true"></i>
+          <div class="swiper-slide">
+            <img src="src/assets/DiarioCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/HierbaCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/HistoriasCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/PeterCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/PrincipitoCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/HierbaCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/PeterCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/DiarioCover1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/HistoriasCover1.png" alt="">
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-</footer>
+    <!-- artistas -->
+    <section class="mx-auto mt-32 mb-32">
+      <div class="flex grid-cols-2 space-x-20 justify-center p-5">
+        <img src="src/assets/Picolo.png" class="object-cover">
+        <img src="src/assets/Mireia.png" class="object-cover">
+      </div>
 
-<script src="./src/js/index.js"></script>
+    </section>
 
+    <script src="src/js/index.js"></script>
+  </div>
 </body>
+
 </html>
