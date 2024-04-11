@@ -23,54 +23,54 @@
   <div x-data="Data()" x-init="Start()">
     <nav class="py-6 ">
         <div class="flex justify-between">
-         <div class="flex flex-row items-center gap-3 mx-3">
-             <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
-             <a href="/Homepage.html" class="text-white font-bold "> ART COLLAB</a>
-         </div>
-          <div class="flex gap-4 flex-col justify-center items-center lg:flex-row">
-             <span class="material-symbols-outlined  text-white mx-5 scale-125 hover:text-orange-400  lg:hidden" @click="SetToggle()"> menu </span>
-            <div class=" lg:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 1024 ? true : false">
-             <ul class="flex flex-wrap flex-col gap-6 text-center lg:flex-row ">
-                 <li >
-                     <a href="#" class="text-white hover:text-orange-400">Artistas</a>
-                 </li>
-                 <li >
-                     <a href="#" class="text-white hover:text-orange-400">Libros</a>
-                 </li>
-                 <li >
-                     <a href="#" class="text-white hover:text-orange-400">Colabora</a>
-                 </li>
-                 <li >
-                     <a href="#" class="text-white hover:text-orange-400">Premium</a>
-                 </li>
-                 <div class="flex flex-col lg:flex-row gap-2 lg:gap-0">
-                    <li>
-                        <div class="border-slate-100 border-solid border-2 h-9 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0">
-                          <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
-                          <span class="material-symbols-outlined text-white text-xl mx-2">search</span>
-                        </div>
-                        
-                     </li>
-                     <li>
-                        <input class=" bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
-                     </li>
-                     <li >
-                        <input class="bg-white text-sm w-24 h-9 mx-3  rounded-md" type="button" value="Registrate"/> 
-                     </li>
-                 </div>
-             </ul>
-            </div>
-          </div>
-         </div>
+        <div class="flex gap-3 mx-3 flex-col sm:flex-row">
+            <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
+            <a href="/homepage.html" class="text-white text-xs sm:text-base font-bold"> ART COLLAB</a>
         </div>
-     </nav>
+        <div class="flex gap-5 text-xs sm:text-base flex-col justify-center items-center md:flex-row">
+            <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
+            <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 845 ? true : false">
+            <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Artistas</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Libros</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Colabora</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Premium</a>
+                </li>
+                <div class="flex flex-col lg:flex-row gap-2 lg:gap-0">
+                  <li>
+                      <div class="border-slate-100 border-solid border-2 h-9 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0">
+                        <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
+                        <span class="material-symbols-outlined text-white text-xl mx-2">search</span>
+                      </div>
+                      
+                   </li>
+                   <li>
+                      <input class=" bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
+                   </li>
+                   <li >
+                      <input class="bg-white text-sm w-24 h-9 mx-3  rounded-md" type="button" value="Registrate"/> 
+                   </li>
+               </div>
+            </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
 </div>
-<div class=" hero-container flex justify-between relative">
-    <div class="pt-10 mx-10 flex flex-col gap-5"> 
+<div class=" pt-20 hero-container flex justify-between relative">
+    <div class=" pb-10 sm:mx-10 flex flex-col gap-5"> 
         <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
         <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
         <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
-        <button class=" text-xs md:text-sm bg-blue-400 w-48 text-black absolute top-44 sm:top-48 md:top-52 lg:top-72 h-12 sm:w-46 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
+        <button class=" ml-5 text-xs md:text-sm bg-blue-400 w-40 text-black  top-44 sm:top-48 md:top-52  h-12 sm:w-46 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
     </div>
     <div class="absolute right-2 top-0 ">
         <img src="./src/assets/Hero-image.png" alt="hero" class=" w-64 sm:w-96 md:w-full"/>
@@ -78,8 +78,8 @@
 </div>
   <div
     style="background-image: url('src/assets/Descubre.png'); width: auto; height: auto; background-repeat: no-repeat; background-size:cover;">
-    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Explora Y</h1>
-    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Descubre</h1>
+    <h1 class="font-extrabold text-3xl sm:text-5xl text-right md:text-7xl">Explora Y</h1>
+    <h1 class="font-extrabold text-3xl sm:text-5xl text-right md:text-7xl">Descubre</h1>
     <br>
     <h4 class="font-bold text-2xl text-right md:text-4xl">nuestro cátalogo de libros y artistas</h4>
     <br>
@@ -142,10 +142,10 @@
     <div class="w-full h-full bg-no-repeat bg-cover bg-center overflow-hidden"
     style="background-image:url(./src/assets/COLABORA-background.png);">
         <div class="mx-3 my-2 space-y-4">
-            <h2 class="text-7xl font-bold ">COLABORA</h2>
-            <h2 class="text-7xl font-bold">CON OTROS</h2>
-            <h2 class="text-7xl font-bold">ARTISTAS</h2>
-            <h3 class="text-4xl font-bold">y crea historias que cambiarán vidas</h3>
+            <h2 class=" text-4xl md:text-7xl font-bold ">COLABORA</h2>
+            <h2 class=" text-4xl md:text-7xl font-bold">CON OTROS</h2>
+            <h2 class=" text-4xl md:text-7xl font-bold">ARTISTAS</h2>
+            <h3 class=" text-4xl md:text-4xl font-bold">y crea historias que cambiarán vidas</h3>
         </div>
      
         <div class="flex justify-center items-center mt-16">
@@ -153,7 +153,7 @@
         </div>        
     
         <div class="flex flex-col items-center my-16">
-            <button class="text-lg text-black font-semibold bg-orange-600 mb-40 h-20 w-80 rounded-full transition-transform duration-500 transform hover:scale-110">Descubre cómo</button>
+            <button class="text-lg text-black font-semibold bg-orange-600 mb-40 h-20 w-64 sm:w-80 rounded-full transition-transform duration-500 transform hover:scale-110">Descubre cómo</button>
         </div>
     </div>
     <footer class=" flex flex-col gap-7 bg-cyan-950 py-6 ">
