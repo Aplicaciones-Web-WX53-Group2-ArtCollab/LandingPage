@@ -2,7 +2,6 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 :root{
@@ -44,7 +43,11 @@ button{
 .books{
   padding: 50px 0 150px 0;;
 }
-
+.swiper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .swiper-slide{
  background-position: center;
  background-size: cover;
@@ -54,6 +57,10 @@ button{
   display: block;
   width: 100%;
 }
+
+.hero-container {
+  height:39vh;
+}
 @media(max-width: 991px){
   body{
       min-height: 0vh;
@@ -62,5 +69,11 @@ button{
       padding: 30px;
   }
 
+}
+
+@media (width<=768px){
+  .hero-container {
+    height:28vh;
+  }
 }
 

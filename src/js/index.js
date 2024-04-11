@@ -26,7 +26,7 @@ var swiper = new Swiper(".mySwiper", {
     stretch: 10,
     depth: 300,
     modifier: 1,
-    slideShadows: false,
+    slideShadows: false
   },
   loop: true,
   });
