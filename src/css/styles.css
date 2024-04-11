@@ -26,6 +26,12 @@ button{
   animation:  var(--transition-delay) pulse infinite;
 }
 
+.login-body{
+  height: 100vh;
+}
+
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
