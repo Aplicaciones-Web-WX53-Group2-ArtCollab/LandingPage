@@ -1,8 +1,12 @@
-.books{
-  padding: 50px 0 150px 0;;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
 }
-.swiper{
-  width: 100%;
+
+:root{
+  --transition-delay: 1.2s;
 }
 
 html,body{
@@ -27,9 +31,35 @@ button{
   0% {
     transform: scale(1);
   }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.books{
+  padding: 50px 0 150px 0;;
+}
+.swiper{
+  width: 100%;
+}
+.swiper-slide{
+ background-position: center;
+ background-size: cover;
+ width: 280px;
+}
+.swiper-slide img{
+  display: block;
+  width: 100%;
+}
+@media(max-width: 991px){
+  body{
+      min-height: 0vh;
+  }
   .books{
       padding: 30px;
   }
   
 }
-
