@@ -1,36 +1,22 @@
-*{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-y: hidden;
+.books{
+  padding: 50px 0 150px 0;;
+}
+.swiper{
+  width: 100%;
 }
 
-:root{
-  --transition-delay: 1.2s;
-}
-
-
-
-body, html{
+html,body{
     background-image: url("../assets/Hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 100vh;
+    height: auto;
 
 }
 
-a,span:hover{
+span:hover{
   cursor: pointer;
-  transition-duration: var(--transition-delay);
 
-}
-
-input[type="button"]:hover{
-    cursor: pointer;
-    border-width: 0;
-    transform: scale(1.1);
-    transition-duration: var(--transition-delay);
 }
 
 button{
@@ -41,10 +27,9 @@ button{
   0% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.2);
+  .books{
+      padding: 30px;
   }
-  100% {
-    transform: scale(1);
-  }
+  
 }
+
