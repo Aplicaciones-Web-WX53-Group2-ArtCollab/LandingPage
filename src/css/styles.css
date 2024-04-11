@@ -65,7 +65,7 @@ button{
 }
 
 .hero-container {
-  height:52vh;
+  height: 52vh;
 }
 @media(max-width: 991px){
   body{
@@ -82,4 +82,3 @@ button{
     height:29vh;
   }
 }
-
