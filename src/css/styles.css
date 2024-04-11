@@ -78,6 +78,6 @@ button{
 
 @media (width<=768px){
   .hero-container {
-    height:48vh;
+    height:32vh;
   }
 }
