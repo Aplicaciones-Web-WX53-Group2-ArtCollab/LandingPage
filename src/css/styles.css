@@ -2,17 +2,19 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
 }
-<<<<<<< HEAD
 
 :root{
   --transition-delay: 1.2s;
 }
 
 html,body{
+    background-image: url("../assets/Hero-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: auto;
     height: auto;
+
 }
 
 span:hover{
@@ -27,7 +29,6 @@ button{
 .login-body{
   height: 100vh;
 }
-
 
 
 @keyframes pulse {
@@ -51,7 +52,6 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .swiper-slide{
  background-position: center;
@@ -64,7 +64,7 @@ button{
 }
 
 .hero-container {
-  height: 52vh;
+  height:52vh;
 }
 @media(max-width: 991px){
   body{
@@ -78,9 +78,6 @@ button{
 
 @media (width<=768px){
   .hero-container {
-    height:29vh;
+    height:48vh;
   }
-  
 }
-=======
->>>>>>> 70ffe59 (fix: Corrected css file for Footer)
