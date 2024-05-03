@@ -12,8 +12,6 @@ html,body{
     background-image: url("../assets/Hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
-    height: auto;
 
 }
 
@@ -29,6 +27,7 @@ button{
 .login-body{
   height: 100vh;
 }
+
 
 
 
@@ -65,7 +64,7 @@ button{
 }
 
 .hero-container {
-  height: 52vh;
+  height:52vh;
 }
 @media(max-width: 991px){
   body{
@@ -79,6 +78,6 @@ button{
 
 @media (width<=768px){
   .hero-container {
-    height:29vh;
+    height:40vh;
   }
 }
