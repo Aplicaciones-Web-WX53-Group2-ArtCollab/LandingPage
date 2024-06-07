@@ -32,13 +32,13 @@
                 <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 768 ? true : false">
                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
                         <li class="mr-6">
-                            <a href="#" class="text-white hover:text-orange-400">Artistas</a>
+                            <a href="#artists" class="text-white hover:text-orange-400">Artistas</a>
                         </li>
                         <li class="mr-6">
-                            <a href="#" class="text-white hover:text-orange-400">Libros</a>
+                            <a href="#books" class="text-white hover:text-orange-400">Libros</a>
                         </li>
                         <li class="mr-6">
-                            <a href="#" class="text-white hover:text-orange-400">Colabora</a>
+                            <a href="#collaborate" class="text-white hover:text-orange-400">Colabora</a>
                         </li>
                         <li class="mr-6">
                             <a href="#" class="text-white hover:text-orange-400">Premium</a>
@@ -64,7 +64,7 @@
         </div>
     </nav>
 </div>
-<div  class=" pt-7 sm:pt-16 hero-container flex justify-between overflow-x-hidden  relative">
+<div class=" pt-7 sm:pt-16 hero-container flex justify-between overflow-x-hidden  relative">
     <div class="flex flex-col gap-5">
         <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
         <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
@@ -82,7 +82,7 @@
     <br>
     <h4 class="font-bold text-2xl text-right md:text-4xl">nuestro cátalogo de libros y artistas</h4>
     <br>
-    <section class="Books-Container">
+    <section class="Books-Container" id="books">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
@@ -119,8 +119,8 @@
     </section>
 
 
-    <!-- artistas -->
-    <section class="Books-Container">
+    <!-- artists -->
+    <section class="Books-Container" id="artists">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
 
@@ -138,7 +138,7 @@
 </div>
 
 
-<div class="w-full h-full bg-no-repeat bg-cover bg-center overflow-hidden"
+<div id="collaborate" class="w-full h-full bg-no-repeat bg-cover bg-center overflow-hidden"
      style="background-image:url(./src/assets/COLABORA-background.png);">
     <div class="mx-3 my-2 space-y-4">
         <h2 class=" text-4xl md:text-7xl font-bold ">COLABORA</h2>
